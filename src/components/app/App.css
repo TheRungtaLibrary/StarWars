@@ -1,0 +1,7 @@
+body {
+    min-width: 100%;
+    height: 100vh;
+    background-color: #7FC4FD;
+    color: #fff;
+    overflow: hidden;
+}

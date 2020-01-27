@@ -1,0 +1,21 @@
+.right-panel {
+    width: 81%;
+    height: 100%;
+    float: right;
+
+}
+
+.film-list-header {
+    border-bottom: solid 2px white;
+}
+
+.film-list-panel {
+    position: absolute;
+    overflow-y: scroll;
+    height: 90%;
+}
+
+.text-centered {
+    margin: 0;
+    text-align: center;
+}

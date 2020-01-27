@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"moduleResolution": "Node",
+		"module": "ES6",
+		"target": "ES6",
+		"jsx": "react",
+		"allowJs": true
+	},
+	"include": [
+		"./src/**/*"
+	],
+	"exclude": [
+		"./build/**/*",
+		"./node_modules/**/*",
+		"./src/**/*.test.ts",
+		"./src/*.test.ts"
+	]
+}

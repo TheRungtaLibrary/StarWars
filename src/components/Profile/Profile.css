@@ -1,0 +1,36 @@
+.profile-panel {
+    width: 100%;
+    height: 250px;
+    background-color: #2699FB;
+    position: relative;
+}
+
+.img-panel {
+    text-align: center;
+}
+
+.img-panel > h4, .img-panel > h5 {
+    margin: 0;
+}
+
+.img-panel + table {
+    margin-top: 15%;
+}
+
+img {
+    width: 15%;
+    height: 15%;
+    margin: 17% 10% 1% 10%;
+    border-radius: 50%;
+}
+
+.profile-logout-btn {
+    background: white;
+    color: #2699FB;
+    margin: 30px 3px 3px 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90%;
+    border: 0;
+    cursor: pointer;
+}

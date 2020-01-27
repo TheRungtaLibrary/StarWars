@@ -1,0 +1,55 @@
+.film-list-item {
+    height: auto;
+    padding: 0.4em;
+}
+
+div.film-list-item > span {
+    display: block;
+    margin: 0.4em;
+}
+
+.checkbox-label {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    clear: both;
+    padding: 4px;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: transparent;
+    opacity:1;
+}
+
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "\2661";
+    left: 6px;
+    top: 6px;
+    opacity:1;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+    opacity:1;
+    content: "\2665";
+    left: 6px;
+    top: 6px;
+}

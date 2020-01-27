@@ -1,0 +1,179 @@
+{
+	// https://eslint.org/docs/user-guide/configuring#specifying-environments
+	"parser": "@typescript-eslint/parser",
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	// https://eslint.org/docs/user-guide/configuring#specifying-environments
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": 2018,
+		"ecmaFeatures": {
+			"impliedStrict": true,
+			"jsx": true
+		}
+	},
+	// https://github.com/gajus/eslint-plugin-jsdoc
+	"plugins": [
+		"jsdoc",
+		"@typescript-eslint"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		// Uses the recommended rules from the @typescript-eslint plugin see
+		// https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/src/configs/recommended.json
+		"plugin:@typescript-eslint/recommended"
+	],
+	// @see https://eslint.org/docs/rules/
+	"rules": {
+		// Force indention with 4 spaces
+		// @see https://eslint.org/docs/rules/indent
+		"indent": [
+			"error",
+			"tab"
+		],
+		// Force single quotes
+		// @see https://eslint.org/docs/rules/quotes
+		"quotes": [
+			"error",
+			"single"
+		],
+		// Force usage of semicolom
+		// @see https://eslint.org/docs/rules/semi
+		"semi": [
+			"error",
+			"always"
+		],
+		// Force camelCase variable naming
+		// @see https://eslint.org/docs/rules/camelcase
+		"camelcase": [
+			"error"
+		],
+		// Force curly braces around block statements
+		// @see https://eslint.org/docs/rules/curly
+		"curly": [
+			"error"
+		],
+		// Disallow trailing commas
+		// @see https://eslint.org/docs/rules/comma-dangle
+		"comma-dangle": [
+			"error",
+			"never"
+		],
+		// Force ine true brace style
+		// @see https://eslint.org/docs/rules/brace-style#1tbs
+		"brace-style": [
+			"error",
+			"1tbs"
+		],
+		// Force a space before a block
+		// @see https://eslint.org/docs/rules/space-before-blocks
+		"space-before-blocks": [
+			"error",
+			"always"
+		],
+		// Force space after function keyqord
+		// @see https://eslint.org/docs/rules/space-before-function-paren
+		"space-before-function-paren": [
+			"error",
+			"always"
+		],
+		// Force space after before keywords like if else etc.
+		// @see https://eslint.org/docs/rules/keyword-spacing
+		"keyword-spacing": [
+			"error"
+		],
+		// Disallow spaces after and before array brackets
+		// @see https://eslint.org/docs/rules/array-bracket-spacing
+		"array-bracket-spacing": [
+			"error",
+			"never"
+		],
+		// Disallow spaces in parentheses
+		// @see https://eslint.org/docs/rules/space-in-parens
+		"space-in-parens": [
+			"error",
+			"never"
+		],
+		// Force comma spacing to format ", "
+		// @see https://eslint.org/docs/rules/comma-spacing
+		"comma-spacing": [
+			"error",
+			{
+				"before": false,
+				"after": true
+			}
+		],
+		// Force no-space before and one space after object keys
+		// @see https://eslint.org/docs/rules/key-spacing
+		"key-spacing": [
+			"error"
+		],
+		// Warn on multiple spaces
+		// @see https://eslint.org/docs/rules/no-multi-spaces
+		"no-multi-spaces": [
+			"error"
+		],
+		// Force usage of type sage equality operators === & !==
+		// @see https://eslint.org/docs/rules/eqeqeq
+		"eqeqeq": [
+			"error",
+			"always"
+		],
+		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-jsdoc
+		"jsdoc/require-jsdoc": [
+			"error",
+			{
+				"require": {
+					"FunctionDeclaration": true,
+					"MethodDefinition": false,
+					"ClassDeclaration": true,
+					"ArrowFunctionExpression": false,
+					"FunctionExpression": false
+				}
+			}
+		],
+		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns
+		"jsdoc/require-returns": [
+			"error"
+		],
+		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param
+		"jsdoc/require-param": [
+			"error"
+		],
+		// https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param-type
+		"jsdoc/require-param-type": [
+			"error"
+		],
+
+		// Typescript specific https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
+
+		// https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-inferrable-types.md
+		"@typescript-eslint/no-inferrable-types": [
+			"warn"
+		],
+		// Overrides recommended setting of having this as a warning
+		// https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
+		"@typescript-eslint/no-unused-vars": [
+			"error"
+		],
+		// Require that interface names be prefixed with I
+		// https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/interface-name-prefix.md
+		"@typescript-eslint/interface-name-prefix": [
+			"error",
+			{
+				"prefixWithI": "always"
+			}
+		]
+	},
+	"globals": {
+	}
+}

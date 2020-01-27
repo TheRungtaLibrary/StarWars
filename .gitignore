@@ -1,0 +1,11 @@
+# IDE specific folders
+.idea
+
+# Distribution folders and files
+/build
+/src/*.js
+/src/**/*.js
+/src/*.map
+/src/**/*.map
+
+/node_modules/

@@ -1,0 +1,13 @@
+a {
+    background-color: #2699FB;
+    border-radius: 0.4em;
+    margin: 1em;
+}
+
+.nav-link-item-name-span {
+    float: left;
+}
+
+.nav-link-item-name-span + span{
+    float: right;
+}
