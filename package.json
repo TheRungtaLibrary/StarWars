@@ -37,7 +37,7 @@
 		"eslint": "^6.5.1",
 		"eslint-plugin-jsdoc": "^15.9.9",
 		"eslint-plugin-react": "^7.15.1",
-		"html-webpack-plugin": "^3.2.0",
+		"html-webpack-plugin": "^5.5.0",
 		"style-loader": "^1.0.0",
 		"ts-loader": "^6.2.0",
 		"typescript": "^3.6.3",
